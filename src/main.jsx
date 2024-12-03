@@ -43,9 +43,12 @@ const router = createBrowserRouter(
   }
 );
 
+console.log(clientId);
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <GoogleOAuthProvider clientId={clientId}>
+    <GoogleOAuthProvider client_id={clientId}>
       <Header />
       <Toaster />
       <RouterProvider router={router} />
